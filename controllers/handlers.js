@@ -61,10 +61,15 @@ const getResultProjectData = async (req,res)=>{
   }
 }
 
+const checkHealth = (req,res) => {
+  res.send("App is Running")
+}
+
 module.exports = {
   getProjectData,
   getPollData,
   handleVote,
-  getResultProjectData
+  getResultProjectData,
+  checkHealth
 };
 
